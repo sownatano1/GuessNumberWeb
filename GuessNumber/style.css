@@ -1,0 +1,85 @@
+h1
+{
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+h3
+{   
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    width:60px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#numberInput
+{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.confirm
+{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.confirm:hover
+{
+    width: 110px;
+    font-size: 19px;
+    background-color: rgb(199, 199, 199);
+}
+
+
+.hint
+{
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    width:200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.winPNG
+{
+    padding: 1%;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    width:300px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
