@@ -61,23 +61,19 @@ function Reset()
 function RandomImage()
 {
     let randomImg = parseInt(Math.random() * 8)
-    console.log("Numero da image: " + randomImg)
 
     if (randomImg <= 2)
     {
-        console.log("cat")
         image.src = "cat-meme.gif"
     }
 
     else if (randomImg <= 5)
     {
-        console.log("happyCat")
         image.src = "HappyCat.gif"
     }
 
     else if (randomImg <= 8)
     {
-        console.log("frog")
         image.src = "froggy.gif"
     }
 
