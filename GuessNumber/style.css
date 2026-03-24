@@ -24,6 +24,27 @@ h3
     margin-bottom: 10px;
 }
 
+div
+{
+    height: 20px;
+}
+
+#container
+{
+    display: block;
+    margin: auto;
+}
+
+.parent
+{
+    margin: 0;
+    height: 60px; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f0f0f0;
+    display: flex;
+}
+
 #numberInput
 {
     display: block;
@@ -33,6 +54,17 @@ h3
     margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
+}
+
+h2
+{
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    width:10px;
 }
 
 .confirm
