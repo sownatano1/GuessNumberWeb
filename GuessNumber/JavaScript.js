@@ -1,5 +1,7 @@
 let randoness = parseInt(Math.random() * 100 + 1 )
 let correctNumber = randoness
+let triesNumber = 6
+const tries = document.getElementById("tries")
 
 const paragraph = document.createElement("p")
 paragraph.classList.add("hint")
@@ -15,47 +17,68 @@ function Input()
     console.log("O numero é: " + correctNumber)
     console.log(number)
     
-    if (number == correctNumber)
+    triesNumber = triesNumber - 1
+    tries.textContent = triesNumber
+
+    if (triesNumber <= 0)
     {
-        paragraph.textContent = "Acertou!";
+        document.g
+        tries.textContent = 0;
+        paragraph.textContent = "Perdeu!";
         container.appendChild(paragraph)
-        RandomImage()
-        setTimeout(() => 
+        image.src = "sad-emotional.gif"
+        container.appendChild(image)
+        setTimeout(() =>
         {
             Reset()
-        }, 2000);
+        }, 2000);   
     }
 
-    else if (correctNumber - 3 < number && number < correctNumber + 3)
+    if (triesNumber > 0)
     {
-        paragraph.textContent = "O número está próximo";
-        container.appendChild(paragraph)
-    }
+        if (number == correctNumber)
+        {
+            paragraph.textContent = "Acertou!";
+            container.appendChild(paragraph)
+            RandomImage()
+            setTimeout(() => 
+            {
+                Reset()
+            }, 2000);
+        }
 
-    else if (number == 0)
-    {   
-        paragraph.remove()
-    }
+        else if (correctNumber - 3 < number && number < correctNumber + 3)
+        {
+            paragraph.textContent = "O número está próximo";
+            container.appendChild(paragraph)
+        }
 
-    else if (number > correctNumber)
-    {
-        paragraph.textContent = "O número é menor";
-        container.appendChild(paragraph)
-    }
+        else if (number == 0)
+        {   
+            paragraph.remove()
+        }
 
-    else if (number < correctNumber)
-    {
-        paragraph.textContent = "O número é maior";
-        container.appendChild(paragraph)
+        else if (number > correctNumber)
+        {
+            paragraph.textContent = "O número é menor";
+            container.appendChild(paragraph)
+        }
+
+        else if (number < correctNumber)
+        {
+            paragraph.textContent = "O número é maior";
+            container.appendChild(paragraph)
+        }
     }
 }
 
 function Reset()
 {
-    paragraph.remove()
-    image.remove()
+    triesNumber = 6;
     randoness = parseInt(Math.random() * 100 + 1 )
     correctNumber = randoness;
+    paragraph.remove()
+    image.remove()
 }
 
 function RandomImage()

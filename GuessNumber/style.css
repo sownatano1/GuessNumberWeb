@@ -29,42 +29,41 @@ div
     height: 20px;
 }
 
-#container
-{
-    display: block;
-    margin: auto;
-}
-
 .parent
 {
-    margin: 0;
+    justify-self: center;
+    height: 60px;
+}
+
+.child
+{
     height: 60px; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: #f0f0f0;
-    display: flex;
+    display: inline-flex;
 }
 
 #numberInput
 {
-    display: block;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
+    align-self: center;
 }
 
 h2
 {
-    padding: 2%;
+    padding: 4%;
     text-align: center;
     background-color: rgb(231, 231, 231);
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
     border-style:outset;
     width:10px;
+    align-self: center;
+    margin-top: 14px;
+    margin-left: 12px;
 }
 
 .confirm
