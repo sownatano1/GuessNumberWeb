@@ -9,6 +9,8 @@ const image = document.createElement("img")
 image.classList.add("winPNG")
 const container = document.getElementById("container")
 
+let confirm = document.getElementById("confirm")
+
 function Input()
 {
     let inputNum = document.getElementById("numberInput")
@@ -22,6 +24,7 @@ function Input()
 
     if (triesNumber <= 0)
     {
+        confirm.disabled = true;
         document.g
         tries.textContent = 0;
         paragraph.textContent = "Perdeu!";
@@ -38,6 +41,7 @@ function Input()
     {
         if (number == correctNumber)
         {
+            confirm.disabled = true;
             paragraph.textContent = "Acertou!";
             container.appendChild(paragraph)
             RandomImage()
@@ -74,6 +78,7 @@ function Input()
 
 function Reset()
 {
+    confirm.disabled = false;
     triesNumber = 6;
     randoness = parseInt(Math.random() * 100 + 1 )
     correctNumber = randoness;

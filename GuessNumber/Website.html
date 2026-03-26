@@ -8,10 +8,10 @@
     </head>
     <body style="background-image: linear-gradient(to left,rgb(164, 152, 219), rgb(139, 139, 139), rgb(179, 143, 143));">
         <header>
-            <h1>Guess The Number</h1>
+            <h1 class="GTN">Guess The Number</h1>
         </header>
         
-        <main>
+        <main class="GuessNumber">
             <h3>0 - 100</h3>
             <div class="parent">
                 <div class="child"> 
@@ -24,10 +24,22 @@
             </div>
         </main>
 
+        <main>
+            <h1 class="RPS">Rock, Papper & Scissor</h1>
+            <button class="enemy" id="enemy">?</button>
+            <div class="options">
+            <button class="PaperBtn"></button>
+            <button class="RockBtn"></button>
+            <button class="ScissorBtn"></button>
+            </div>
+            <button class="startRPS" onclick="StartGame()" id="startRPS">Start</button>
+        </main>
+
         <footer>
             
         </footer>
 
         <script src="JavaScript.js"></script> 
+        <script src="RPS.js"></script>
     </body>
 </html>
