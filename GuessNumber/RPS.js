@@ -5,19 +5,30 @@ let rock = document.getElementById("RockBtn")
 let paper = document.getElementById("PaperBtn")
 let scissor = document.getElementById("ScissorBtn")
 
+paper.disabled = true
+rock.disabled = true
+scissor.disabled = true
+
+let randomNumber
+
 function GetRandomInt(min, max)
 {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber
 }
 
 function StartGame()
 {
+    GetRandomInt(1,3)
+
     if (start)
     {
         start.disabled = true;
     }
 
-    GetRandomInt(1,3)
+    paper.disabled = false
+    rock.disabled = false
+    scissor.disabled = false
 
     enemy.textContent = 3
     
@@ -35,4 +46,43 @@ function StartGame()
     {
         enemy.textContent = 0
     }, 3000);
+
+    const timer3 = setTimeout(() =>
+    {
+        EnemyChoosing()
+    }, 3100);
+}
+
+function PaperPress()
+{
+    rock.disabled = true
+    scissor.disabled = true
+}
+
+function RockPress()
+{
+    paper.disabled = true
+    scissor.disabled = true
+}
+
+function ScissorPress()
+{
+    paper.disabled = true
+    rock.disabled = true
+}
+
+function EnemyChoosing()
+{
+    if (randomNumber == 1)
+    {
+        
+    }
+    if (randomNumber == 2)
+    {
+        alert("teste2")
+    }
+    if (randomNumber == 3)
+    {
+        alert("teste3")
+    }
 }

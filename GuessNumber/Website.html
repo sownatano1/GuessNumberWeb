@@ -26,11 +26,11 @@
 
         <main class="RPSLayout">
             <h1 class="RPS">Rock, Papper & Scissor</h1>
-            <button class="enemy" id="enemy">?</button>
+            <img class="enemy" id="enemy"></img>
             <div class="options">
-            <button class="PaperBtn"></button>
-            <button class="RockBtn"></button>
-            <button class="ScissorBtn"></button>
+            <button class="PaperBtn" id="PaperBtn" onclick="PaperPress()"></button>
+            <button class="RockBtn" id="RockBtn" onclick="RockPress()"></button>
+            <button class="ScissorBtn" id="ScissorBtn" onclick="ScissorPress()"></button>
             </div>
             <button class="startRPS" onclick="StartGame()" id="startRPS">Start</button>
         </main>

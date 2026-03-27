@@ -28,6 +28,7 @@
 body
 {
     display: flex;
+    justify-content: center;
 }
 
 h3
@@ -142,7 +143,7 @@ h2
     border-radius: 50px;
     border-color: black;
     border-style:solid;
-    height: 360px;
+    height: 370px;
     width: 430px;
     display: block;
     margin-left: 30px;
@@ -180,6 +181,7 @@ h2
     background-image: url(Papper.jpg);
     background-size: 87px;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .RockBtn
 {
@@ -189,7 +191,8 @@ h2
     border-radius: 10px;
     background-image: url(Rock.png);
     background-position: center;
-    background-size: 72px;
+    background-size: 70px;
+    background-repeat: no-repeat;
 }
 .ScissorBtn
 {
@@ -200,7 +203,7 @@ h2
     background-image: url(Scissor.jpg);
     background-size: 90px;
     background-position: center;
-    background-position-y: 75cqh;
+    background-repeat: no-repeat;
 }
 .PaperBtn:hover
 {
@@ -219,7 +222,11 @@ h2
     border-style:dashed;
     background-size: 125%;
     background-position: center;
-    background-position-y: 79cqh;
+}
+
+.RockBtn:disabled
+{
+    background-color: white;
 }
 
 .startRPS
