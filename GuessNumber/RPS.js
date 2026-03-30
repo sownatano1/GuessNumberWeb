@@ -30,21 +30,21 @@ function StartGame()
     rock.disabled = false
     scissor.disabled = false
 
-    enemy.textContent = 3
+    enemy.src = "3.png"
     
     const timer = setTimeout(() =>
     {
-        enemy.textContent = 2
+        enemy.src = "2.png"
     }, 1000);
 
     const timer1 = setTimeout(() =>
     {
-        enemy.textContent = 1
+        enemy.src = "1.png"
     }, 2000);
 
     const timer2 = setTimeout(() =>
     {
-        enemy.textContent = 0
+        enemy.src = "0.png"
     }, 3000);
 
     const timer3 = setTimeout(() =>
@@ -75,14 +75,14 @@ function EnemyChoosing()
 {
     if (randomNumber == 1)
     {
-        
+        enemy.scr = "Rock.png"
     }
     if (randomNumber == 2)
     {
-        alert("teste2")
+        enemy.scr = "Papper.jpeg"
     }
     if (randomNumber == 3)
     {
-        alert("teste3")
+        enemy.scr = "Scissor.jpeg"
     }
 }
