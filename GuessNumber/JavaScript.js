@@ -84,6 +84,7 @@ function Reset()
     correctNumber = randoness;
     paragraph.remove()
     image.remove()
+    tries.textContent = 6
 }
 
 function RandomImage()

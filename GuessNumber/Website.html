@@ -6,13 +6,13 @@
         <title>Guess the Number</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-image: linear-gradient(to left,rgb(164, 152, 219), rgb(139, 139, 139), rgb(179, 143, 143));">
+    <body style="background-color: rgb(116, 116, 116)"></body>
         <header>
         </header>
         
         <main class="GuessNumber">
             <h1 class="GTN">Guess The Number</h1>
-            <h3>0 - 100</h3>
+            <h3 class="max">0 - 100</h3>
             <div class="parent">
                 <div class="child"> 
                 <input id="numberInput" type="number" class="center-input" title="center-input" placeholder="Enter number">
@@ -28,9 +28,11 @@
             <h1 class="RPS">Rock, Papper & Scissor</h1>
             <img class="enemy" id="enemy" src="int.png"></img>
             <div class="options">
-            <button class="PaperBtn" id="PaperBtn" onclick="PaperPress()"></button>
-            <button class="RockBtn" id="RockBtn" onclick="RockPress()"></button>
-            <button class="ScissorBtn" id="ScissorBtn" onclick="ScissorPress()"></button>
+                <button class="PaperBtn" id="PaperBtn" onclick="PaperPress()"></button>
+                <button class="RockBtn" id="RockBtn" onclick="RockPress()"></button>
+                <button class="ScissorBtn" id="ScissorBtn" onclick="ScissorPress()"></button>
+            </div>
+            <div id="result">
             </div>
             <button class="startRPS" onclick="StartGame()" id="startRPS">Start</button>
         </main>
