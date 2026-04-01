@@ -135,7 +135,10 @@ h2
     margin-bottom: 100px;
 }
 
-
+/* ROCK PAPER SCISSOR CSS*/
+/* ROCK PAPER SCISSOR CSS*/
+/* ROCK PAPER SCISSOR CSS*/
+/* ROCK PAPER SCISSOR CSS*/
 
 .RPSLayout
 {
@@ -284,4 +287,44 @@ h2
     border-style:outset;
     margin: auto;
     width: 200px;
+}
+
+/* AIM CLICKER CSS*/
+/* AIM CLICKER CSS*/
+/* AIM CLICKER CSS*/
+/* AIM CLICKER CSS*/
+
+.AimLayout
+{
+    background-image:radial-gradient(rgb(233, 134, 134),rgb(189, 95, 95));
+    border-radius: 50px;
+    border-color: black;
+    border-style:solid;
+    display: block;
+    margin-left: 40px;
+    width: 490px;
+    height: 550px;
+}
+
+.AimTitle
+{
+    text-align: center;
+    background-image: linear-gradient(rgb(185, 183, 183),rgb(228, 228, 228));
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+    border-style:outset;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 220px; 
+}
+
+canvas
+{
+    background-image:radial-gradient(rgb(240, 240, 240),rgb(189, 189, 189));
+    border-color: black;
+    border-style:solid;
+    display: block;
+    margin-left: 20px;
 }
