@@ -6,7 +6,7 @@
         <title>Guess the Number</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color: rgb(116, 116, 116)"></body>
+    <body style="background: linear-gradient(rgb(218, 218, 218) 10%, rgb(255, 255, 255), rgb(97, 97, 97) 80%)"></body>
         <header>
         </header>
         
@@ -39,9 +39,8 @@
 
         <main class="AimLayout">
             <h1 class="AimTitle">Aim & Shoot</h1>
-            <canvas id="canva" width="400px" height="400px">
-
-            </canvas>
+            <canvas id="canvas" width="400" height="300"></canvas>
+            <button id="spawnBtn" onclick="startGame()">Start</button>
         </main>
 
         <footer>
@@ -50,5 +49,6 @@
 
         <script src="JavaScript.js"></script> 
         <script src="RPS.js"></script>
+        <script src="Aim.js"></script>
     </body>
 </html>
